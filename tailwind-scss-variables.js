@@ -32,7 +32,7 @@ module.exports = function (options, savePath = '/tailwind-variables.scss') {
             });
         }
 
-        fs.writeFileSync(__dirname + savePath, finalString); 
+        fs.writeFileSync(__dirname + '/../../' + savePath, finalString); 
     };
 }
 
