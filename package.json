@@ -1,0 +1,27 @@
+{
+  "name": "@hjbdev/tailwind-scss-variables",
+  "version": "0.0.3",
+  "description": "A TailwindCSS plugin to generate SCSS variables based on your Tailwind config",
+  "main": "tailwind-scss-variables.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HJBDev/tailwind-scss-variables.git"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "tailwindcss",
+    "postcss",
+    "plugin",
+    "scss"
+  ],
+  "author": "HJBDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HJBDev/tailwind-scss-variables/issues"
+  },
+  "homepage": "https://github.com/HJBDev/tailwind-scss-variables#readme"
+}
