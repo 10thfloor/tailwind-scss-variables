@@ -1,3 +1,8 @@
+## This library is literally pointless
+Just use `theme('screens.md')` in your file.
+
+SMH.
+
 # tailwind-scss-variables
 A TailwindCSS plugin to generate SCSS variables based on your Tailwind config
 
