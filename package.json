@@ -1,6 +1,6 @@
 {
   "name": "tailwind-scss-variables",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "A TailwindCSS plugin to generate SCSS variables based on your Tailwind config",
   "main": "tailwind-scss-variables.js",
   "scripts": {

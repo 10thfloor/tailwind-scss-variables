@@ -32,7 +32,16 @@ module.exports = function (options, savePath = '/tailwind-variables.scss') {
             });
         }
 
-        fs.writeFileSync(__dirname + '/../../' + savePath, finalString); 
+        let finalSavePath = __dirname + '/../../' + savePath;
+
+        try {
+            let file = fs.readFileSync(finalSavePath, 'utf8');
+            if (file !== finalString) { // file exists
+                fs.writeFileSync(finalSavePath, finalString);
+            }
+        } catch (error) {
+            fs.writeFileSync(finalSavePath, finalString); 
+        }
     };
 }
 
@@ -60,7 +69,7 @@ function findPropPaths(obj, predicate) {  // The function
     const path = [];    // The current path being searched
     const results = []; // The array of paths that satify the predicate === true
     if (!obj && (typeof obj !== "object" || Array.isArray(obj))) {
-        throw new TypeError("First argument of finPropPath is not the correct type Object");
+        throw new TypeError("First argument of findPropPath is not the correct type Object");
     }
     if (typeof predicate !== "function") {
         throw new TypeError("Predicate is not a function");
